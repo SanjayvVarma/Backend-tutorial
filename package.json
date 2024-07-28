@@ -1,0 +1,19 @@
+{
+  "name": "backend-tutorial",
+  "version": "1.0.0",
+  "description": "backend tutorial ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "apis"
+  ],
+  "author": "Sanjay",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

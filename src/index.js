@@ -1,6 +1,14 @@
 import dbConnection from "./database/dbConnection.js";
-import { config } from "dotenv";
+import app from "./app.js";
 
-config({path:"./.env"})
 
 dbConnection()
+
+app.on("error", (error)=>{
+    console.log("ERROR", error);
+    throw error;
+})
+
+app.listen(process.env.PORT || 8080, ()=>{
+console.log("Server is running at port ", process.env.PORT );
+})
